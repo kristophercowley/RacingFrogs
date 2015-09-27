@@ -16,17 +16,17 @@
         </div>
         <div class="panel-body">
             <p>
-             Joe has {{vm.joe.cash}}
+             Joe has ${{vm.joe.cash}}.00
             </p>
             <p>
-             Bob has {{vm.bob.cash}}
+             Bob has: ${{vm.bob.cash}}.00
             </p>
             <p>
-            The bank has {{vm.bank}}
+            The bank has: ${{vm.bank}}.00
             </div>
             <div class="panel-footer">
-            <span class="btn btn-default" ng-click="vm.giveMoneyToJoe()">Give $10 to Joe</span>
-            <span class="btn btn-default" ng-click="vm.receiveMoneyFromBob()">Recieve $5 from Bob</span>
+            <span class="btn btn-danger" ng-click="vm.giveMoneyToJoe()">Give $10 to Joe</span>
+            <span class="btn btn-primary" ng-click="vm.receiveMoneyFromBob()">Recieve $5 from Bob</span>
             </div>
     </div>
     </div>

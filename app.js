@@ -17,7 +17,7 @@ function MainController() {
                 this.cash -= amount;
                 return amount;
             } else {
-                alert("I don't have enough cash to give you! " + this.name + " says.");
+                alert("I don't have enough cash to give you! " + this.name + " says..................");
                 return 0;
             }
 
@@ -28,7 +28,7 @@ function MainController() {
                 return amount;
 
             } else {
-                alert("Not so fast there, that numbers negative!" + this.name + " says.");
+                alert("Not so fast there, that numbers negative!" + this.name + " says.............");
                 return 0;
 
 
@@ -39,7 +39,7 @@ function MainController() {
         if (vm.bank >= 10) {
             vm.bank -= vm.joe.receiveCash(10);
         } else {
-            alert("The bank is out of money!!!!!")
+            alert("BANKRUPTCY!! The bank is out of money!!!!!")
         }
     }
     vm.receiveMoneyFromBob = function () {
