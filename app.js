@@ -13,11 +13,11 @@ function MainController() {
         this.name = name;
         this.cash = startingCash;
         this.giveCash = function (amount) {
-            if (amount >= this.cash && amount > 0) {
+            if (amount <= this.cash && amount > 0) {
                 this.cash -= amount;
                 return amount;
             } else {
-                alert("I don't have enough cash to give you!" + this.name + " says.");
+                alert("I don't have enough cash to give you! " + this.name + " says.");
                 return 0;
             }
 
