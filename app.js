@@ -18,7 +18,7 @@ function MainController() {
        vm.frogs.forEach(function(frog){
            frog.posX += Math.floor(Math.random() * 10)
            if(frog.posX >= 100){
-               alert(frog.name + "Wins");  
+               alert(frog.name + "," + "Wins!");  
            }
        })
         
