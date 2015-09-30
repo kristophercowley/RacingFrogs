@@ -4,35 +4,46 @@
     <meta charset="UTF-8">
     <title>Racing Frogs</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="app.css"
-</head>
+    <link rel="stylesheet" href="app.css" </head>
 
-<body ng-controller="MainController as vm">
-{{1+2}}
-    <div class="container">
-        <div class="panel panel-primary">
-        <div class="panel-heading">
-            Fun with Joe and Bob
+    <body ng-controller="MainController as vm">
+        {{1+2}}
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Les Bois Frog Racing
+                </div>
+                <div class="panel-body">
+                    This is the Body
+                </div>
+                <div class="panel-footer">
+                    <span class="btn btn-success">Start</span>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">
+                    Fun with Joe and Bob
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Joe has ${{vm.joe.cash}}.00
+                    </p>
+                    <p>
+                        Bob has: ${{vm.bob.cash}}.00
+                    </p>
+                    <p>
+                        The bank has: ${{vm.bank}}.00
+                </div>
+                <div class="panel-footer">
+                    <span class="btn btn-danger" ng-click="vm.giveMoneyToJoe()">Give $10 to Joe</span>
+                    <span class="btn btn-primary" ng-click="vm.receiveMoneyFromBob()">Recieve $5 from Bob</span>
+                </div>
+            </div>
         </div>
-        <div class="panel-body">
-            <p>
-             Joe has ${{vm.joe.cash}}.00
-            </p>
-            <p>
-             Bob has: ${{vm.bob.cash}}.00
-            </p>
-            <p>
-            The bank has: ${{vm.bank}}.00
-            </div>
-            <div class="panel-footer">
-            <span class="btn btn-danger" ng-click="vm.giveMoneyToJoe()">Give $10 to Joe</span>
-            <span class="btn btn-primary" ng-click="vm.receiveMoneyFromBob()">Recieve $5 from Bob</span>
-            </div>
-    </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.6/angular.min.js"></script>
-    <script src="app.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.6/angular.min.js"></script>
+        <script src="app.js"></script>
+    </body>
 
 </html>
