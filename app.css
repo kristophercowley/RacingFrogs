@@ -1,4 +1,24 @@
 body {
-	background-color: green;
+	background-color: seagreen;
 	
+}
+.frog {
+	background-image: url("frogcar");
+	background-color: green;
+	border-width: 5px;
+	border-color: black;
+	height: 30px;
+	width: 30px;
+}
+
+.lane-name{
+	width:100px;
+	float:left;
+}
+.lane {
+	background-color: lightgrey;
+	float:left;
+}
+.finish {
+	float: right;
 }

@@ -5,6 +5,25 @@ app.controller('MainController', MainController);
 function MainController() {
     var vm = this; //instead of using this when refering to the controller, let's use vm. It will make things easier.
     
+    vm.frogs = [new Frog('Kermit', 50),new Frog('Freddy', 10),new Frog('Fraggle',0),new Frog('Dread',14)];
+    
+    function Frog(name, posX) {
+        this.name = name;
+        this.posX = 0;
+       
+    }
+    
+    vm.race = function(){
+       // console.log("Working")
+       vm.frogs.forEach(function(frog){
+           frog.posX += Math.floor(Math.random() * 10)
+           if(frog.posX >= 100){
+               alert(frog.name + "Wins");  
+           }
+       })
+        
+    }
+    
     vm.joe = new Guy("Joe", 100);
     vm.bob = new Guy("Bob", 150);
     vm.bank = 200;

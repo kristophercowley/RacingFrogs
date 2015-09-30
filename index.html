@@ -14,10 +14,22 @@
                     Les Bois Frog Racing
                 </div>
                 <div class="panel-body">
-                    This is the Body
+
+                    <table class="table">
+                        <tbody>
+                            <tr ng-repeat="frog in vm.frogs">
+                                <td style="border: 1px solid black; width: 100px">{{frog.name}}</td>
+                                <td style="border: 1px dashed black; position: relative">
+                                    <div style="position: absolute; top: 0; left:{{frog.posX}}%; bottom: 0; width: 20px; background-color: green;"></div>
+                                    <span class="pull-left">>>START>></span>
+                                    <span class="pull-right">|| FINISH</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="panel-footer">
-                    <span class="btn btn-success">Start</span>
+                    <span class="btn btn-success" ng-click="vm.race()">Start Racing</span>
                 </div>
             </div>
             <div class="panel panel-primary">
