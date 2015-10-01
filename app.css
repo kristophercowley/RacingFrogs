@@ -1,6 +1,6 @@
 body {
 	background-color: seagreen;
-	
+	background-image: url(images/pond4.jpg) ;
 }
 .frog {
 	background-image: url("frogcar");
@@ -10,7 +10,9 @@ body {
 	height: 30px;
 	width: 30px;
 }
-
+.winner {
+	float:right;
+}
 .lane-name{
 	width:100px;
 	float:left;

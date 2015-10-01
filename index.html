@@ -9,9 +9,10 @@
     <body ng-controller="MainController as vm">
         {{1+2}}
         <div class="container">
-            <div class="panel panel-primary">
+            <div class="panel panel-success">
                 <div class="panel-heading">
-                    Les Bois Frog Racing
+                    <h1><b>!Not Les Bois Frog Racing!</b><img src="images/lesbois.jpg" alt="lesBoisPark"/><b>!Les Bois Frog Racing!</b></h1>
+                    
                 </div>
                 <div class="panel-body">
 
@@ -29,15 +30,15 @@
                     </table>
                 </div>
                 <div class="panel-footer">
-                    <span class="btn btn-success" ng-click="vm.race()">Start Racing</span>
+                    <span class="btn btn-success" ng-click="vm.start()">Start Racing</span>
                      <span class="btn btn-danger" ng-click="vm.reset()">Reset Race</span>
                      <input type="text" ng-model="vm.froggy" placeholder="New frogs name"/>
                      <span class="btn btn-primary" ng-click="vm.addFrog(vm.froggy)">Add Frogs</span>
-                     
-                     <span class="btn btn-primary" ng-click="vm.raceId()">Race ID</span>
+                     <span class="winner"><b>The Winner is:{{vm.winner}}</b></span>
+                     <!--<span class="btn btn-primary" ng-click="vm.raceId()">Race ID</span>-->
                 </div>
             </div>
-            <div class="panel panel-primary">
+            <div class="panel panel-success">
 
                 <div class="panel-heading">
                     Fun with Joe and Bob
