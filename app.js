@@ -9,19 +9,38 @@ function MainController() {
     
     function Frog(name, posX) {
         this.name = name;
-        this.posX = 0;
-       
+        this.posX = 0;   
     }
+    
+    vm.addFrog = function(name){
+        //console.log("working")
+       vm.frogs.push(new Frog(name,0));
+    }
+    
+    //setTimeout(vm.frogs.forEach,3000);
     
     vm.race = function(){
        // console.log("Working")
+       //while(vm.isRacing)
        vm.frogs.forEach(function(frog){
-           frog.posX += Math.floor(Math.random() * 10)
+           if(frog.posX < 100){
+           frog.posX += Math.floor(Math.random() * 10);
+           };
+           //vm.setTimout(vm.frogs.forEach,3000);
            if(frog.posX >= 100){
                alert(frog.name + "," + "Wins!");  
+               //vm.isRacing = false;
            }
        })
-        
+      
+    }
+    
+    
+    vm.reset = function(){
+       // console.log("Working")
+        vm.frogs.forEach(function(frog){
+            frog.posX = 0;
+        })
     }
     
     vm.joe = new Guy("Joe", 100);
