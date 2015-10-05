@@ -64,7 +64,7 @@ function MainController($timeout) {
 
 
     vm.reset = function () {
-        // console.log("Working")
+        // console.log("Working")//
         vm.frogs.forEach(function (frog) {
             frog.posX = 0;
         })
